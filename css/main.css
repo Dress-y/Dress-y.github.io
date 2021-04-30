@@ -31,6 +31,8 @@ Domain Path:      /languages/
    IMPORT GOOGLE FONTS
    ========================================================================== */
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,600|Roboto");
+@import url(font-awesome.min.css);
+
 /* ==========================================================================
    GENERAL
    ========================================================================== */
@@ -793,6 +795,7 @@ button:focus {
 }
 
 #clients .client-item-wrapper {
+  display: inline-block;
   text-align: center;
   margin-bottom: 15px;
   -moz-transition: all 0.6s ease;
@@ -1269,27 +1272,38 @@ button:focus {
 
 .single-team {
   position: relative;
-  margin: 15px 0;
+  display: inline-block;
+  margin: 20px 0;
   border-radius: 4px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   box-shadow: 0px 0px 16px rgba(131, 131, 131, 0.17);
   border-radius: 0px;
   overflow: hidden;
+  width: 150px;
+  height: 250px;
 }
 
 .single-team .team-thumb {
   position: relative;
+  display: inline-block;
+
+  width: 150px;
+  height: 150px;
 }
 
 .single-team:hover {
   -webkit-transform: translateY(0px);
   transform: translateY(0px);
   box-shadow: 0px 0px 16px rgba(131, 131, 131, 0.35);
+
 }
 
 .single-team img {
-  width: 100%;
+  display: inline-block;
+
+  width: 150px;
+  height: 150px;
 }
 
 .single-team .team-inner {
@@ -1308,7 +1322,7 @@ button:focus {
 
 .single-team .team-details .team-title {
   margin-bottom: 5px;
-  font-size: 18px;
+  font-size: 12px;
   color: #263238;
 }
 
